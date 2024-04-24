@@ -12,4 +12,8 @@
 #
 class Post < ApplicationRecord
   belongs_to(:board)
+  validates(:body, { :presence => true})
+  validates(:title, { :presence => true})
+  validates(:expires_on, { :presence => true})
+  validates(:board_id, { :presence => true})
 end

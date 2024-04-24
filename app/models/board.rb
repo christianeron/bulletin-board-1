@@ -20,4 +20,6 @@ class Board < ApplicationRecord
   #  return active_posts
   #end
 
+  validates(:name {:presence => true})
+
 end
